@@ -1,9 +1,292 @@
-/*<span class="material-symbols-outlined">
-directions_bike
-</span>
-<span class="material-symbols-outlined">
-ac_unit
-</span>
-<span class="material-symbols-outlined">
-group
-</span>*/
+/* BASE */
+html {
+    box-sizing: border-box;
+    font-size:62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*  MISE EN PAGE */
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* MODULES */
+
+/* EN-TÊTE */
+
+header {
+    background-color: #379AE3;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+}
+
+.logo {
+    font-family: "Merriweather";
+    font-weight: bold;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+header a {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #000;
+    text-decoration: none;
+}
+
+header ul a:hover {
+    color: #E6EDF1;
+}
+
+header .bouton {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #000;
+    padding: 7px 24px;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+header p {
+    margin: 0;
+}
+
+/* HERO */
+
+.hero {
+    height: 637px;
+    background-image: url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 70px;
+}
+
+h1 {
+    margin: 0;
+    font-family: "Merriweather";
+    font-weight: bold;
+    font-size: 6.4rem;
+    line-height: 105%;
+    color: #E67522;
+    text-align: center;
+}
+
+.accroche p {
+    font-family: "Roboto";
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #fff;
+    line-height: 150%;
+    text-align: center;
+    padding: 0 45px;
+}
+
+.accroche span  p {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.accroche {
+    height: 440px;
+    width: 550px;
+    background-color: rgba(0,0,0,0.7);
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.accroche .bouton {
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 5px;
+    background-color: #E67522;
+}
+
+.accroche .bouton a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero .wrapper {
+    height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* CONTENU */
+
+h2 {
+    font-family: "Merriweather";
+    font-weight: bold;
+    font-size: 6.4rem;
+    line-height: 115%;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding-top: 100px;
+}
+
+.contenu p {
+    font-family: "Roboto";
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 150%;
+    text-align: center;
+    padding: 0 170px 74px;
+}
+
+.contenu {
+    background-color: #E6EDF1;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+h3 {
+    font-family: "Merriweather";
+    font-weight: bold;
+    font-size: 3.6rem;
+    line-height: 108%;
+    letter-spacing: -2%;
+    text-align: center;
+}
+
+.txt-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 370px;
+    height: 415px;
+    margin-bottom: 100px;
+}
+
+.txt-article span p {
+    padding: 0 20px;
+}
+
+.clic {
+    border-style: solid;
+    border-color: #000;
+    border-radius: 5px;
+    background-color: #E67522;
+    margin-bottom: 40px;
+}
+
+.bouton.clic p {
+    margin: 0;
+    padding: 5px 20px;
+}
+
+article {
+    position: relative;
+}
+
+.premier {
+    position: absolute;
+    top: -12px;
+    right: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    height: 270px;
+    background-color: #CCDAE3;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+footer span {
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 50%;
+    border-width: 2px;
+    background-color: #E67522;
+    color: #fff;
+    padding: 10px;
+}
+
+footer div .material-symbols-outlined {
+  font-size: 6.0rem;
+}
+
+footer p {
+    font-family: "Roboto";
+    font-size: 1.4rem;
+    line-height: 140.6%;
+    text-align: center;
+}
+
+/* MODALE */
+
+.modale {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    /*margin: auto auto;*/
+  }
+
+  .modale.visible {
+    display: flex;
+  }
+
+  .blanc {
+    width: 800px;
+    height: 600px;
+    cursor: pointer;
+    background-color: white;
+    border-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
