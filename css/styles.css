@@ -8,6 +8,10 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    margin-top: 70px;
+}
+
 /*  MISE EN PAGE */
 
 .wrapper {
@@ -22,6 +26,7 @@ html {
 header {
     background-color: #379AE3;
     position: fixed;
+    top: 0;
     width: 100vw;
     z-index: 2;
 }
@@ -83,8 +88,6 @@ header p {
     background-image: url("../images/hero.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
-    top: 70px;
 }
 
 h1 {
